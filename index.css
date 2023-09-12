@@ -1,0 +1,35 @@
+nav.navbar,main,section#contact-me,section#certificates,section#other-experience-standpoint,section#mantras-and-aspirors{
+    background-color: black;
+}
+a.nav-link{
+    color: red;
+}
+section#section-face{
+    height: 90VH;
+    background-color: black;
+}
+div#section-face-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+div#section-face-container-img img{
+    border-radius: 100%;
+}
+section#section-face,main,div#contact-me-img{
+    display: grid;
+    place-items: center;
+}
+div h2 span{
+    text-shadow: 0 0 5px black;
+}
+p{
+    text-align: justify;
+}
+ul li .dropdown-item:hover{
+    background-color: red;
+}
+ul .contact-me-way a{
+    text-decoration: none;
+    color: red;
+}

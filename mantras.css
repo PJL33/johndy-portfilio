@@ -1,0 +1,27 @@
+nav.navbar,section#mantras-head,section#section-navbar,main,section#after-mantras,footer{
+    background-color: black;
+}
+a.nav-link{
+    color: red;
+}
+ul li .dropdown-item:hover{
+    background-color: red;
+}
+section#mantras-head{
+    height: 100VH;
+}
+section#section-navbar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+#mantras-head-img,#mantras-head-title{
+    display: grid;
+    place-items: center;
+}
+p{
+    text-align: justify;
+}
+.mantras-item{
+    color: white;
+}

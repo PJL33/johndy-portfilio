@@ -1,0 +1,36 @@
+nav.navbar,section#works-head,main,section#formations,footer{
+    background-color: black;
+}
+a.nav-link{
+    color: red;
+}
+ul li .dropdown-item:hover{
+    background-color: red;
+}
+section#works-head{
+    height: 100VH;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section#section-navbar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+p{
+    text-align: justify;
+}
+.works-items{
+    border: red 1.5px solid;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.work-item-head{
+    border-bottom: red 2.5px solid;
+}
+.img-flot-left{
+    float:left;
+    margin-right: 2px;
+}
