@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<style>
+div{
+background-color:red;
+height:50%;
+}
+.carousel-indicators button{
+border-radius: 100%;
+}
+</style>
+</head>
+<body>
+<div id="carouselExampleIndicators" class="carousel slide d-sm-none d-lg-block">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="height:25px;background-color:black;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="height:25px;background-color:black;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="height:25px;background-color:black;"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="">test1/test2</div>
+    </div>
+    <div class="carousel-item">
+      <div class="">test3/test4</div>
+    </div>
+    <div class="carousel-item">
+      <div>test5/test6</div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Do not forget to customize prev and next icon with forgeting the indicators shape -->
+<div id="carouselExampleIndicatorssm" class="carousel slide d-sm-block d-lg-none">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="height:25px;background-color:black;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="1" aria-label="Slide 2" style="height:25px;background-color:black;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="2" aria-label="Slide 3" style="height:25px;background-color:black;"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="">test1 only</div>
+    </div>
+    <div class="carousel-item">
+      <div class="">test2 only</div>
+    </div>
+    <div class="carousel-item">
+      <div>test3 only</div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</body>
+</html>
