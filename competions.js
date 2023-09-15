@@ -47,3 +47,23 @@ seeFlll.addEventListener("click",function(){
 hideFlll.addEventListener("click",function(){
     flllImg.style.cssText = "display:none;";
 });
+
+let seeMounville = document.getElementById("btn-see-mounville");
+let hideMounville = document.getElementById("btn-hide-mounville");
+let mounvilleImg = document.getElementById("mounville-img");
+seeMounville.addEventListener("click",function(){
+    mounvilleImg.style.cssText = "dsplay:block;";
+});
+hideMounville.addEventListener("click",function(){
+    mounvilleImg.style.cssText = "display:none;";
+});
+
+let seeDc = document.getElementById("btn-see-dc");
+let hideDc = document.getElementById("btn-hide-dc");
+let dcImg = document.getElementById("dc-img");
+seeDc.addEventListener("click",function(){
+    dcImg.style.cssText = "dsplay:block;";
+});
+hideDc.addEventListener("click",function(){
+    dcImg.style.cssText = "display:none;";
+});

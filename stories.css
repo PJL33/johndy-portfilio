@@ -22,12 +22,6 @@ section#competitions-head{
 h2 span{
     text-shadow: 0 0 5px black;
 }
-.competitions-items{
-    border: red 1.5px solid;
-    background-color: white;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-.competitions-item-head{
-    border-bottom: red 2.5px solid;
+p{
+    text-align: justify;
 }

@@ -1,4 +1,4 @@
-nav.navbar,main,section#contact-me,section#certificates,section#other-experience-standpoint,section#mantras-and-aspirors{
+nav.navbar,main,section#contact-me,section#certificates,section#other-experience-standpoint,section#mantras-and-aspirors,section#comments-on-me,footer{
     background-color: black;
 }
 a.nav-link{
@@ -23,6 +23,9 @@ section#section-face,main,div#contact-me-img{
 div h2 span{
     text-shadow: 0 0 5px black;
 }
+h2{
+    text-shadow: 0 0 5px black;    
+}
 p{
     text-align: justify;
 }
@@ -32,4 +35,41 @@ ul li .dropdown-item:hover{
 ul .contact-me-way a{
     text-decoration: none;
     color: red;
+}
+/* Where the carousel begins */
+.first-box,.second-box{
+background-color:white;
+height:40VH;
+width: 40VW;
+overflow-y: scroll;
+border: 1.5px solid red;
+padding: 6px;
+text-align: justify;
+}
+.carousel-indicators button{
+border-radius: 100%;
+position: relative;
+top:10VH;
+}
+.carousel-control-prev span{
+  position: relative;
+  right:20%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next span{
+  position: relative;
+  left:20%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; 
+}
+.flexible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn:hover{
+  background-color: black;
+}
+.commenter{
+    font-weight: bold;
 }
