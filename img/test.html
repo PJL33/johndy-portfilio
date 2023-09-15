@@ -4,31 +4,252 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <style>
-div{
-background-color:red;
-height:50%;
+body{
+  background-color: lightcoral;
+}
+.first-box,.second-box{
+background-color:white;
+height:40VH;
+width: 40VW;
+overflow-y: scroll;
+border: 1.5px solid red;
+padding: 6px;
+text-align: justify;
 }
 .carousel-indicators button{
 border-radius: 100%;
+position: relative;
+top:10VH;
+}
+.carousel-control-prev span{
+  position: relative;
+  right:20%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next span{
+  position: relative;
+  left:20%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; 
+}
+.flexible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn:hover{
+  background-color: black;
 }
 </style>
 </head>
 <body>
 <div id="carouselExampleIndicators" class="carousel slide d-sm-none d-lg-block">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="height:25px;background-color:black;"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="height:25px;background-color:black;"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="height:25px;background-color:black;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="height:20px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="height:20px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="height:20px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" style="height:20px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5" style="height:20px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6" style="height:20px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7" style="height:20px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8" style="height:20px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9" style="height:20px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10" style="height:20px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11" style="height:20px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12" style="height:20px;background-color:red;"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="">test1/test2</div>
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: right;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+        </div>
+        <div class="second-box" style="direction:rtl">
+          <p style="direction:ltr">2</p>
+          <div class="original" style="text-align: left;">
+            <span class="btn btn-danger" id="dimitry">See original text</span>
+          </div>
+        </div>
+      </section>
     </div>
     <div class="carousel-item">
-      <div class="">test3/test4</div>
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: right;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+        </div>
+        <div class="second-box" style="direction:rtl">
+          <p style="direction:ltr">2</p>
+          <div class="original" style="text-align: left;">
+            <span class="btn btn-danger" id="dimitry">See original text</span>
+          </div>
+        </div>
+      </section>
     </div>
     <div class="carousel-item">
-      <div>test5/test6</div>
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: right;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+        </div>
+        <div class="second-box" style="direction:rtl">
+          <p style="direction:ltr">2</p>
+          <div class="original" style="text-align: left;">
+            <span class="btn btn-danger" id="dimitry">See original text</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: right;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+        </div>
+        <div class="second-box" style="direction:rtl">
+          <p style="direction:ltr">2</p>
+          <div class="original" style="text-align: left;">
+            <span class="btn btn-danger" id="dimitry">See original text</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: right;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+        </div>
+        <div class="second-box" style="direction:rtl">
+          <p style="direction:ltr">2</p>
+          <div class="original" style="text-align: left;">
+            <span class="btn btn-danger" id="dimitry">See original text</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: right;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+        </div>
+        <div class="second-box" style="direction:rtl">
+          <p style="direction:ltr">2</p>
+          <div class="original" style="text-align: left;">
+            <span class="btn btn-danger" id="dimitry">See original text</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: right;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+        </div>
+        <div class="second-box" style="direction:rtl">
+          <p style="direction:ltr">2</p>
+          <div class="original" style="text-align: left;">
+            <span class="btn btn-danger" id="dimitry">See original text</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: right;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+        </div>
+        <div class="second-box" style="direction:rtl">
+          <p style="direction:ltr">2</p>
+          <div class="original" style="text-align: left;">
+            <span class="btn btn-danger" id="dimitry">See original text</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: right;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+        </div>
+        <div class="second-box" style="direction:rtl">
+          <p style="direction:ltr">2</p>
+          <div class="original" style="text-align: left;">
+            <span class="btn btn-danger" id="dimitry">See original text</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: right;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+        </div>
+        <div class="second-box" style="direction:rtl">
+          <p style="direction:ltr">2</p>
+          <div class="original" style="text-align: left;">
+            <span class="btn btn-danger" id="dimitry">See original text</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: right;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+        </div>
+        <div class="second-box" style="direction:rtl">
+          <p style="direction:ltr">2</p>
+          <div class="original" style="text-align: left;">
+            <span class="btn btn-danger" id="dimitry">See original text</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: right;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+        </div>
+        <div class="second-box" style="direction:rtl">
+          <p style="direction:ltr">2</p>
+          <div class="original" style="text-align: left;">
+            <span class="btn btn-danger" id="dimitry">See original text</span>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -43,19 +264,247 @@ border-radius: 100%;
 <!-- Do not forget to customize prev and next icon with forgeting the indicators shape -->
 <div id="carouselExampleIndicatorssm" class="carousel slide d-sm-block d-lg-none">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="height:25px;background-color:black;"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="1" aria-label="Slide 2" style="height:25px;background-color:black;"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="2" aria-label="Slide 3" style="height:25px;background-color:black;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="1" aria-label="Slide 2" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="2" aria-label="Slide 3" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="3" aria-label="Slide 4" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="4" aria-label="Slide 5" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="5" aria-label="Slide 6" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="6" aria-label="Slide 7" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="7" aria-label="Slide 8" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="8" aria-label="Slide 9" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="9" aria-label="Slide 10" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="10" aria-label="Slide 11" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="11" aria-label="Slide 12" style="height:15px;background-color:red;"></button>
+    \<button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="12" aria-label="Slide 13" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="13" aria-label="Slide 14" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="14" aria-label="Slide 15" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="15" aria-label="Slide 16" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="16" aria-label="Slide 17" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="17" aria-label="Slide 18" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="18" aria-label="Slide 19" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="19" aria-label="Slide 20" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="20" aria-label="Slide 21" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="21" aria-label="Slide 22" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="22" aria-label="Slide 23" style="height:15px;background-color:red;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="23" aria-label="Slide 24" style="height:15px;background-color:red;"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="">test1 only</div>
+      <section class="flexible">
+        <div class="first-box">
+          <p>1</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
     </div>
     <div class="carousel-item">
-      <div class="">test2 only</div>
+      <section class="flexible">
+        <div class="first-box">
+          <p>2</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
     </div>
     <div class="carousel-item">
-      <div>test3 only</div>
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section class="flexible">
+        <div class="first-box">
+          <p>3</p>
+          <div class="original" style="text-align: center;">
+            <span class="btn btn-danger" id="stevenson">See original text</span>
+          </div>
+      </section>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide="prev">
@@ -67,5 +516,7 @@ border-radius: 100%;
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<script type="text/javascript" src="original-comment.js"></script>
 </body>
 </html>
