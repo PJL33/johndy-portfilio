@@ -22,6 +22,7 @@ section#competitions-head{
 h2 span{
     text-shadow: 0 0 5px black;
 }
-p{
-    text-align: justify;
+.drop-last{
+    height: 10VH;
+    overflow-y: scroll;
 }

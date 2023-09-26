@@ -1,4 +1,4 @@
-nav.navbar,div#aspirers-choices,section#aspirer-item,section#aspirants-head{
+nav.navbar,div#aspirers-choices,section#aspirer-item,section#aspirants-head,footer{
     background-color: black;
 }
 a.nav-link{
@@ -6,6 +6,12 @@ a.nav-link{
 }
 ul li .dropdown-item:hover{
     background-color: red;
+}
+section#section-navbar{
+
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 section#aspirants-head{
     height: 100VH;
@@ -15,7 +21,6 @@ section#aspirants-head{
     place-items: center;
 }
 p{
-    text-align: justify;
     text-indent: 20px;
 }
 div#aspirers-choices{
@@ -31,4 +36,12 @@ div#aspirers-choices{
 #aspirer-item{
     width: 100%;
     margin: auto;
+}
+@media (max-width: 1024px) {
+    h1{
+        font-size: 40vw;
+    }
+    #aspirers-choices button{
+        font-size: 4vw;
+    }
 }

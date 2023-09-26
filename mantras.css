@@ -19,9 +19,14 @@ section#section-navbar{
     display: grid;
     place-items: center;
 }
-p{
-    text-align: justify;
-}
 .mantras-item{
     color: white;
+}
+@media (max-width: 1024px) {
+    li{
+        font-size: 4vw;
+    }
+    #mantras-list{
+    padding: 5.5vw;
+    }
 }

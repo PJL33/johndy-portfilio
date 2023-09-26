@@ -18,9 +18,6 @@ section#section-navbar{
     top: 0px;
     width: 100%;
 }
-p{
-    text-align: justify;
-}
 .works-items{
     border: red 1.5px solid;
     background-color: white;

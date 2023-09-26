@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>My stories</title>
+        <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="stories.css">
+        <link rel="stylesheet" href="mobile.css">
         <link rel="icon" href="img/PHILISTIN.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -26,7 +28,7 @@
                           Experiences
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="competitions.html">competitions Experiences</a></li>
+                          <li><a class="dropdown-item" href="works.html">Work Experiences</a></li>
                           <li><a class="dropdown-item" href="competitions.html">Competitions Experiences</a></li>
                           <li><a class="dropdown-item" href="stories.html">Stories of some Experiences</a></li>
                         </ul>
@@ -46,12 +48,89 @@
             </nav>
         </section>
         <!-- head -->
-        <section id="stories-introduction">
-            <p class="text-just">As I keep saying, experience is the key to putting your knowledge into action. Through experiences, you will gain a deeper understanding of your essential values, strengths, and flaws essentially your inner self. I didn't know much about me previously. I thought I was good enough to simply ace in school and sports. Now I recognize what my fundamental values are. This is why I keep recommending people in my environment to seek out new experiences, internships, competitions, and so on. </p>
+        <section id="stories-introduction" class="p-3">
+            <p class="">As I keep saying, experience is the key to putting your knowledge into action. Through experiences, you will gain a deeper understanding of your essential values, strengths, and flaws essentially your inner self. I didn't know much about me previously. I thought I was good enough to simply ace in school and sports. Now I recognize what my fundamental values are. This is why I keep recommending people in my environment to seek out new experiences, internships, competitions, and so on. </p>
             <p>How did I discover my values? What exactly did I do? How did I put my abilities into practice? These inquiries will be addressed in the articles I've written about my personal experiences. You will be given suggestions on how to apply your talents in a new environment as well as how to look for them if you are unaware of them. I am convinced, as always, that you will find them motivating. Finally, dare to innovate; exploring the unknown leads to the known. If you haven't heard that before, that's because I just made it up. Click on the stories that interest you and change your life.</p>
         </section>
-        <main>
+        <main class="mb-5">
+          <div id="carouselExampleIndicatorssm" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="height:15px;background-color:red;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="1" aria-label="Slide 2" style="height:15px;background-color:red;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide-to="2" aria-label="Slide 3" style="height:15px;background-color:red;"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <section class="flexible">
+                    <div class="first-box">
+                        <h3 class="text-center text-danger display-4 fw-bold">President of the student council</h3>
 
+                            <div class="article-img text-center">
+                                <img src="img/stories/president.png" width="80%" alt="a man talking at the front">
+                            </div>
+                        <p>My Term as Student Council President. Delve into my journey, navigating the challenges and victories of student leadership. I'll also share essential advice on being a better leader, emphasizing communication, empathy, and empowerment. Whether you're in school or beyond, these lessons will empower you to make a positive impact as a leader. Don't miss this insightful exploration of leadership principles and personal growth.</p>
+                        <div class="original" style="text-align: center;">
+                            <a  href="stories/president-of-student-council.html" class="btn btn-danger" id="student-council">Read the article</a>
+                        </div>
+                    </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="flexible">
+                    <div class="first-box">
+                        <h3 class="text-center text-danger display-4 fw-bold">My second internship</h3>
+                            <div class="article-img text-center">
+                                <img src="img/stories/intern.png" width="80%" alt="intern guy">
+                            </div>
+                        <p>This article recounts my internship, highlighting the profound impact it had on my personal values and career aspirations. I delve into the challenges, triumphs, and self-discovery that shaped my journey. This article offers insights into how aligning personal values with professional pursuits can lead to a fulfilling and purpose-driven path, inspiring readers to reflect on their own values and goals.</p>
+                        <div class="original" style="text-align: center;">
+                            <a  href="stories/second-internship.html" class="btn btn-danger" id="article-second-internship">Read the article</a>
+                        </div>
+                    </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="flexible">
+                    <div class="first-box">
+                        <h3 class="text-center text-danger display-4 fw-bold">My Hultprize experience</h3>
+
+                            <div class="article-img text-center">
+                                <img src="img/stories/medal.png" width="80%" alt="a medal">
+                            </div>
+                        <p>I narrate my path from a dream to the Hultprize summit. Overcoming setbacks, I followed advice, submitted globally, and attended. My story embodies the power of persistence and belief in one's potential.</p>
+                        <div class="original" style="text-align: center;">
+                            <a  href="stories/hultprize-journey.html" class="btn btn-danger" id="article-hultprize">Read the article</a>
+                        </div>
+                    </div>
+                </section>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorssm" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </main>
+        <section class="mb-5 mt-5" id="dropdown-area" style="display:grid;place-items:center">
+          <div class="dropdown-center">
+            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Go to
+            </button>
+            <ul class="dropdown-menu drop-last">
+              <li><a class="dropdown-item" href="stories/president-of-student-council.html">President of the student council</a></li>
+              <li><a class="dropdown-item" href="stories/second-internship.html">My second internship</a></li>
+              <li><a class="dropdown-item" href="stories/hultprize-journey.html">My Hultprize experience</a></li>
+            </ul>
+          </div>
+        </section>
+        <footer class="text-light p-1" style="margin-top:15vh;">
+
+          <p class="text-center"><Strong class="fw-light">powered by Johndy Lens Philistin - #IGotAPlan - #stories - #achievements - 2023</Strong></p>
+
+        </footer>
     </body>
 </html>

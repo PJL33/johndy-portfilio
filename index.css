@@ -26,9 +26,6 @@ div h2 span{
 h2{
     text-shadow: 0 0 5px black;    
 }
-p{
-    text-align: justify;
-}
 ul li .dropdown-item:hover{
     background-color: red;
 }
@@ -44,7 +41,6 @@ width: 40VW;
 overflow-y: scroll;
 border: 1.5px solid red;
 padding: 6px;
-text-align: justify;
 }
 .carousel-indicators button{
 border-radius: 100%;
@@ -73,8 +69,13 @@ top:10VH;
 .commenter{
     font-weight: bold;
 }
-@media (max-width:768px){
-    .first-box,.second-box{
-        width: 65VW;
+@media (max-width: 1024px) {
+    #section-face-container-img img{
+        width: 50vw;
+    }
+    .original,.original span{
+        font-size: 4vw;
     }
 }
+}
+

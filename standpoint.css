@@ -1,0 +1,18 @@
+section#section-navbar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+.flexible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.drop-last{
+    height: 10VH;
+    overflow-y: scroll;
+}
+/* #standpoints-introduction{
+    margin-top: 12VH;
+} */
