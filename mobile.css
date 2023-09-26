@@ -14,6 +14,9 @@
     .carousel-indicators button{
         top: 5.7vw;
     }
+    .carousel-caption{
+        display: none;
+    }
 }
 #carouselExampleCaptions .carousel-indicators button{
     background-color: red;

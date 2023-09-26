@@ -2,6 +2,7 @@ section#section-navbar{
     position: fixed;
     top: 0px;
     width: 100%;
+    z-index: 1000;
 }
 .flexible{
     display: flex;
@@ -16,3 +17,23 @@ section#section-navbar{
 /* #standpoints-introduction{
     margin-top: 12VH;
 } */
+#standpoints-head{
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    background-color: black;
+    height: 100VH;
+
+}
+#standpoints-head-title,#standpoints-head-img{
+    display: grid;
+    place-items: center;
+}
+@media (min-width: 1025px) {
+    #carouselExampleIndicatorssm,.first-box{
+        height:100VH
+    }
+    .drop-last{
+        height: 15VH;
+    }
+}

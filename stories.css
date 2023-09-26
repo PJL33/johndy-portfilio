@@ -1,4 +1,4 @@
-nav.navbar,main,section#competitions-head,footer{
+nav.navbar,main,section#competitions-head,#stories-head,footer{
     background-color: black;
 }
 a.nav-link{
@@ -11,7 +11,7 @@ section#section-navbar{
     position: fixed;
     top: 0px;
     width: 100%;
-    z-index: 10000;
+    z-index: 100;
 }
 section#competitions-head{
     height: 100VH;
@@ -25,4 +25,19 @@ h2 span{
 .drop-last{
     height: 10VH;
     overflow-y: scroll;
+}
+#stories-head{
+    height: 100VH;
+}
+#stories-head-img,#stories-head-title{
+    display: grid;
+    place-items: center;
+}
+@media (min-width: 1025px) {
+    #carouselExampleIndicatorssm,.first-box{
+        height:100VH
+    }
+    .drop-last{
+        height: 15VH;
+    }
 }

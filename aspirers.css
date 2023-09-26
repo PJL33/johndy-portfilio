@@ -8,7 +8,7 @@ ul li .dropdown-item:hover{
     background-color: red;
 }
 section#section-navbar{
-
+    z-index:1000;
     position: fixed;
     top: 0px;
     width: 100%;
