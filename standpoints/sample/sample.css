@@ -1,0 +1,27 @@
+nav.navbar{
+    background-color: black;
+}
+a.nav-link{
+    color: red;
+}
+ul li .dropdown-item:hover{
+    background-color: red;
+}
+section#section-navbar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+main{
+    padding: 2%;
+}
+@media (max-width: 1024px) {
+    main,p{
+        font-size: 4.55vw;
+    }
+    input{
+        transform: scale(2.3);
+        border: black;
+    }
+}
